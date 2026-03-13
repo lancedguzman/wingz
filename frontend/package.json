@@ -1,0 +1,58 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:unit": "vitest",
+    "lint": "run-s lint:*",
+    "lint:oxlint": "oxlint . --fix",
+    "lint:eslint": "eslint . --fix --cache",
+    "format": "oxfmt src/"
+  },
+  "dependencies": {
+    "pinia": "^3.0.4",
+    "vue": "*",
+    "vue-router": "^5.0.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitejs/plugin-vue": "^6.0.4",
+    "@vitejs/plugin-vue-jsx": "^5.1.4",
+    "@vitest/eslint-plugin": "^1.6.9",
+    "@vue/test-utils": "^2.4.6",
+    "eslint": "^10.0.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-oxlint": "~1.50.0",
+    "eslint-plugin-vue": "~10.8.0",
+    "globals": "^17.3.0",
+    "jsdom": "^28.1.0",
+    "npm-run-all2": "^8.0.4",
+    "oxfmt": "^0.35.0",
+    "oxlint": "~1.50.0",
+    "vite": "*",
+    "vite-plugin-vue-devtools": "^8.0.6",
+    "vitest": "^4.0.18"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "overrides": {
+    "vue": "*",
+    "@vue/compiler-core": "*",
+    "@vue/compiler-dom": "*",
+    "@vue/compiler-sfc": "*",
+    "@vue/compiler-ssr": "*",
+    "@vue/compiler-vapor": "*",
+    "@vue/reactivity": "*",
+    "@vue/runtime-core": "*",
+    "@vue/runtime-dom": "*",
+    "@vue/runtime-vapor": "*",
+    "@vue/server-renderer": "*",
+    "@vue/shared": "*",
+    "@vue/compat": "*"
+  }
+}
