@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'django-filters',
+    'django_filters',
     'corsheaders',
     'app',
 ]
@@ -68,7 +68,7 @@ REST_FRAMEWORK = {
         'app.authentication.CustomHeaderAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
-        'app.permissions.IsAuthenticated',
+        'app.permissions.IsAdminRole',
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 50,

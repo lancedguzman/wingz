@@ -1,11 +1,19 @@
-<script setup></script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <main>
+    <RideList />
+  </main>
 </template>
 
-<style scoped></style>
+<script setup>
+// Adjust this path if your RideList.vue is saved somewhere else!
+import RideList from './components/RideList.vue';
+</script>
+
+<style>
+/* Optional: Adds a little breathing room to the app */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+</style>
